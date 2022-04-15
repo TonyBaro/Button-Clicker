@@ -8,15 +8,30 @@
     height:fit-content;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .navbar{
     width: 90%;
-    height: 50px;
+    height: fit-content;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: lightgray;
+    padding: 5px 10px;
+}
+.navbar input{
+    width: 50%
+}
+.navbar button{
+    adding: 3px 10px;
+    background-color:blue;
+    color: white;
+    border: 3px solid black;
+    width: 15%;
+}
+h1{
+    font-size: 45pt;
 }
 #body{
     display: flex;
@@ -26,7 +41,61 @@
 .words{
     flex: 2;
 }
-
 .defin{
-
+    border: 2px solid black;
+    margin: 20px 5% 20px 0;
+    display: flex;
+    height: 150px;
+    padding: 5% 0;
+}
+.word{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    font-size: 35pt;
+}
+h3{
+    font-size: 35pt;
+}
+.word button{
+    padding: 3px 10px;
+    background-color: yellow;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    margin: 10px 0 0 0
+}
+.definition{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.action{
+    flex: 1;
+}
+.defineact{
+    border: 2px solid black;
+    margin: 20px 0 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 150px;
+}
+h4{
+    font-size:20pt
+}
+h4 > strong{
+    font-size: 20pt;
+    font-weight: bolder;
+}
+.defineact button{
+    padding: 3px 10px;
+    background-color: chartreuse;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
 }
